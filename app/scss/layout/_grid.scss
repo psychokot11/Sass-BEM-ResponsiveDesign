@@ -24,5 +24,9 @@
 
   &__sidebar {
     background-color: rgb(154, 0, 154);
+
+    @include g.breakpoint-down(medium) {
+      text-align: center;
+    }
   }
 }
