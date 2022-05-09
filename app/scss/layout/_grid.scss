@@ -13,13 +13,9 @@
     grid-template-rows: auto;
   }
 
-  &__main,
-  &__sidebar {
-    padding: g.rem(40);
-  }
-
   &__main {
     background-color: hsl(240, 100%, 29%);
+    padding: g.rem(40);
   }
 
   &__sidebar {
@@ -32,8 +28,15 @@
   &__widget {
     background-color: rgb(154, 0, 154);
     padding: g.rem(16);
+    width: 100%;
+
     &--green {
+      @extend .grid__widget;
       background-color: hsl(120, 100%, 25%);
+    }
+
+    &.yellow {
+      background-color: hsl(55, 100%, 50%);
     }
   }
 }
