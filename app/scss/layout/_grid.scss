@@ -26,7 +26,7 @@
   }
 
   &__widget {
-    background-color: rgb(154, 0, 154);
+    // background-color: rgb(154, 0, 154);
     padding: g.rem(16);
     width: 100%;
 
@@ -35,8 +35,8 @@
       background-color: hsl(120, 100%, 25%);
     }
 
-    &.yellow {
-      background-color: hsl(55, 100%, 50%);
+    &.magenta {
+      background-color: magenta;
     }
   }
 }
