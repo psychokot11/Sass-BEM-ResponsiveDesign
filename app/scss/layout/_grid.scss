@@ -23,10 +23,17 @@
   }
 
   &__sidebar {
-    background-color: rgb(154, 0, 154);
-
     @include g.breakpoint-down(medium) {
       text-align: center;
+      background-color: rgb(1, 113, 1);
+    }
+  }
+
+  &__widget {
+    background-color: rgb(154, 0, 154);
+    padding: g.rem(16);
+    &--green {
+      background-color: hsl(120, 100%, 25%);
     }
   }
 }
